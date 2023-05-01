@@ -1,0 +1,18 @@
+Learn Docker Commands
+
+
+docker build -t <image-name> .
+docker run -d -p 3000:3000 --name <container-name> <image-name>
+docker run -d -v .:/app -v /app/node_modules --name <container-name> <image-name>
+docker logs <container-name>
+docker logs <container-name> -f
+docker rm <running-container-name> -f -v
+docker exec -it <container-name> bash
+docker network ls
+docker inspect <container-name>
+docker volume ls
+docker volume prune
+docker-compose up -d
+docker-compose down -v
+docker-compose up -d --build
+
